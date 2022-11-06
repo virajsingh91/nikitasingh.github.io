@@ -3,7 +3,43 @@
  <html>
 
     <head>
+<style>
+.button {
+  position: relative;
+  background-color: #04AA6D;
+  border: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
 
+.button:after {
+  content: "";
+  background: #90EE90;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+</style>
     	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
         <meta charset="utf-8">
@@ -82,7 +118,7 @@
                         <ul>
 
                             <!--<li class="nav-active"><a href="index.html" title="Work">Work</a></li>-->
-<li><a href="index.html" title="Home">Home</a></li>
+							<li><a href="index.html" title="Home">Home</a></li>
                            <li><a href="about.html" title="About">About</a></li>
 						   <li><a href="SneakerPortfolio.html" title="Portfolio">Sneaker Portfolio</a></li>
 
@@ -112,10 +148,10 @@
 
 				 
 
-                    	
-						<img src="images/PP-21.png" alt="" class="img-responsive"/></br>
-
-                        
+                    	<!--<div>
+						<img src="images/PP-21.png" alt="" class="img-responsive">
+						<a href="SneakerPortfolio.html"><button class="button">Sneaker Portfolio</button></a><a href="Portfolio.html"> <button class="button">Personal Portfolio</button></a></img>
+                        </div></br>-->
 
                 
 
@@ -142,15 +178,15 @@
 							
                 	<figure class="effect-oscar">
 
-                    	<img src="images/home-images/PP-10.png" alt="" class="img-responsive"/>
+                    	<img src="images/Portfolio/PP-30.png" alt="" class="img-responsive"/>
 
                         <figcaption>
 
-                        	<h2><span>About</span></h2>
+                        	<h2><span>Sneaker's</span></h2>
 
 							<!--<p>Nikita Singh</p>-->
 
-							<a href="london.html">View more</a>
+							<a href="SneakerPortfolio.html">View more</a>
 
                         </figcaption>
 
@@ -165,25 +201,25 @@
 
                         
 
-                        <!--<li>
+                        <li>
 
                         	<figure class="effect-oscar">
 
-                            <img src="images/home-images/PP-39.png" alt="" class="img-responsive"/>
+                            <img src="images/Portfolio/PP-21.png" alt="" class="img-responsive"/>
 
                             <figcaption>
 
-                                <h2><span>2010-2006</span></h2>
+                                <h2><span>Unifolio</span></h2>
 
-                                <p>West Bengal</p>
+                                <!--<p>West Bengal</p>-->
 
-                                <a href="westbengal.html">View more</a>
+                                <a href="Portfolio.html">View more</a>
 
                             </figcaption>
 
                         </figure>
 
-                        </li>-->
+                        </li>
 
                     
 
@@ -301,17 +337,17 @@
 
                         	<figure class="effect-oscar">
 
-                            <img src="images/home-images/PP-35.png" alt="" class="img-responsive"/>
+                            <img src="images/home-images/about.png" alt="" class="img-responsive"/>
 
                             <figcaption>
 
                             	
 
-                                    <h2><span>Contact</span></h2>
+                                    <h2><span>About</span></h2>
 
                                     <!--<p>Click for more</p>-->
 
-                                    <a href="contact.html">View more</a>
+                                    <a href="about.html">View more</a>
 
                                 
 
@@ -322,19 +358,19 @@
 
                         </li>
 
-                        <!--<li>
+                        <li>
 
                         	<figure class="effect-oscar">
 
-                            <img src="images/home-images/image-5.jpg" alt="" class="img-responsive"/>
+                            <img src="images/home-images/contact.png" alt="" class="img-responsive"/>
 
                              <figcaption>
 
-                                <h2>A Brand <span>new Agency</span></h2>
+                                <h2>Contact</h2>
 
-                                <p>Over 40,000 customers use our themes to power their</p>
+                                <!--<p>Over 40,000 customers use our themes to power their</p>-->
 
-                                <a href="works-details.html">View more</a>
+                                <a href="contact.html">View more</a>
 
                             </figcaption>
 
@@ -344,7 +380,7 @@
 
                         <li>
 
-                        	<figure class="effect-oscar">
+                        	<!--<figure class="effect-oscar">
 
                             <img src="images/home-images/image-3.jpg" alt="" class="img-responsive"/>
 
